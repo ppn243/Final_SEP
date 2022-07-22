@@ -9,9 +9,9 @@ if (isset($_POST['signin'])) {
 
     $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email' AND password = '$pass'") or die('query failed');
 
-    if(mysqli_num_rows($select_users) > 0) {        
+    if (mysqli_num_rows($select_users) > 0) {
         header('location: homepage.php');
-    }else {
+    } else {
         $message[] = 'incorect email or password!';
     }
 }
@@ -27,20 +27,18 @@ if (isset($_POST['signin'])) {
     <title>Login</title>
 
     <!-- Font Icon -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
     <!-- Main css -->
     <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
-
     <div class="main">
         <h1 style="text-align: center; font-size:40px; font-weight:bold; padding-top:20px"><span style="color:#8E0D34">VN</span><span style="color:#2A2254">UK</span> LOGIN FORM</h1>
         <!-- Sing in  Form -->
-        <section class="sign-in">  
-            <div class="container">  
+        <section class="sign-in">
+            <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="./imag/anh-nen-work-from-home-1-800x601.png" alt="sing up image"></figure>

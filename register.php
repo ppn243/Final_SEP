@@ -1,3 +1,29 @@
+<?php
+
+include 'config.php';
+
+
+if (isset($_POST['signup'])) {
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $pass = mysqli_real_escape_string($conn, md5($_POST['pass']));
+    $re_pass = mysqli_real_escape_string($conn, md5($_POST['re_pass']));;
+
+    $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email' AND password = '$pass'") or die('query failed');
+
+    if(mysqli_num_rows($select_users) > 0) {
+        $message[] = 'User already exits!';
+    }else {
+        if($pass != $re_pass) {
+            $message[] = 'confrim password not matched!';
+        }else {
+            mysqli_query($conn, "INSERT INTO `users`(name, email, password) VALUES ('$name', '$email','$re_pass')") or die('query failed');
+            $message[] = 'registered successfully';
+        }
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +42,9 @@
 </head>
 
 <body>
+
     <div class="main">
+    <h1 style="text-align: center; font-size:40px; font-weight:bold; padding-top:20px"><span style="color:#8E0D34">VN</span><span style="color:#2A2254">UK</span> REGISTER FORM</h1>
         <!-- Sign up form -->
         <section class="signup">
             <div class="container">

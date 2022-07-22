@@ -1,3 +1,22 @@
+<?php
+
+include 'config.php';
+
+
+if (isset($_POST['signin'])) {
+    $email = mysqli_real_escape_string($conn, $_POST['your_name']);
+    $pass = mysqli_real_escape_string($conn, md5($_POST['your_pass']));
+
+    $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email' AND password = '$pass'") or die('query failed');
+
+    if(mysqli_num_rows($select_users) > 0) {        
+        header('location: homepage.php');
+    }else {
+        $message[] = 'incorect email or password!';
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,14 +37,14 @@
 <body>
 
     <div class="main">
-
+        <h1 style="text-align: center; font-size:40px; font-weight:bold; padding-top:20px"><span style="color:#8E0D34">VN</span><span style="color:#2A2254">UK</span> LOGIN FORM</h1>
         <!-- Sing in  Form -->
-        <section class="sign-in">
-            <div class="container">
+        <section class="sign-in">  
+            <div class="container">  
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="./imag/anh-nen-work-from-home-1-800x601.png" alt="sing up image"></figure>
-                        <a href="register.html" class="signup-image-link">Create an account</a>
+                        <a href="register.php" class="signup-image-link">Create an account</a>
                     </div>
 
                     <div class="signin-form">

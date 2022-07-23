@@ -96,6 +96,7 @@ nav ul li.btn span{
 nav ul li.btn span.show:before{
   content: '\f00d';
 }
+
 @media screen and (max-width: 1052px) {
   nav{
     padding: 10px 40px 10px 0px;
@@ -287,7 +288,57 @@ body {margin:0;}
     
 }
 
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #2A2254;
 
+}
+h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: lighter;
+}
+.table {
+  width: 40%;
+  height: fit-content;
+  color: #000;
+  background-color: #D9D9D9;
+  border-collapse: collapse;
+  text-align: center;
+margin-left: 30%;
+}
+th {
+  color: #000;
+  background-color: #D9D9D9;
+  border-collapse: collapse;
+
+  text-align: center;
+}
+
+td {
+  color: #000;
+  background-color: #D9D9D9;
+
+  border-collapse: collapse;
+
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+h4 {
+  margin-left: 30%;
+}
+.table2>td{
+  background-color: #fff;
+}
+body {
+  position: relative; 
+}
 
 /***** Footer *****/
 
@@ -312,3 +363,4 @@ body {margin:0;}
 .footer-copyright p { margin: 0; padding: 0.5rem 0; }
 .footer-copyright a { color: #fff; border: 0; }
 .footer-copyright a:hover, .footer-copyright a:focus { color: #aaa; border: 0; }
+

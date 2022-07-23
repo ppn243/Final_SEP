@@ -17,7 +17,7 @@ if (isset($_POST['signup'])) {
         if($pass != $re_pass) {
             $message[] = 'confrim password not matched!';
         }else {
-            mysqli_query($conn, "INSERT INTO `users`(name, email, password) VALUES ('$name', '$email','$re_pass')") or die('query failed');
+            mysqli_query($conn, "INSERT INTO `users`(name, email, password, re_password) VALUES ('$name', '$email','$pass', '$re_pass')") or die('query failed');
             $message[] = 'registered successfully';
         }
     }

@@ -65,7 +65,7 @@ if(isset($_POST['update_teacher'])){
       if($update_image_size > 2000000){
          $message[] = 'image file size is too large';
       }else{
-         mysqli_query($conn, "UPDATE products SET image = '$update_image' WHERE id = '$update_p_id'") or die('query failed');
+         mysqli_query($conn, "UPDATE teacher SET image = '$update_image' WHERE id = '$update_p_id'") or die('query failed');
          move_uploaded_file($update_image_tmp_name, $update_folder);
          unlink('upload/'.$update_old_image);
       }

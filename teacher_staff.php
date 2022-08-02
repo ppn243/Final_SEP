@@ -1,3 +1,41 @@
+<?php
+
+include 'config.php';
+
+session_start();
+
+if (isset($_POST['add_teacher'])) {
+
+    $name = $_POST['name'];
+    $position = $_POST['position'];
+    $email = $_POST['email'];
+    $phonenumber = $_POST['phonenumber'];
+    $description = $_POST['description'];
+    $image = $_FILES['image']['name'];
+    $image_size = $_FILES['image']['size'];
+    $image_tmp_name = $_FILES['image']['tmp_name'];
+    $image_folder = './upload/' . $image;
+
+    $select_teacher_name = mysqli_query($conn, "SELECT name FROM `teacher` WHERE name = '$name'") or die('query failed');
+
+    if (mysqli_num_rows($select_teacher_name) > 0) {
+        $message[] = 'Teacher already added';
+    } else {
+        $add_teacher_query = mysqli_query($conn, "INSERT INTO `teacher`(name, position, email, phonenumber, description, image) VALUES('$name', '$position', '$email', '$phonenumber', '$description' '$image')") or die('query failed');
+
+        if ($add_teacher_query) {
+            if ($image_size > 2000000) {
+                $message[] = 'Image size is too large';
+            } else {
+                move_uploaded_file($image_tmp_name, $image_folder);
+                $message[] = 'Teacher added successfully!';
+            }
+        } else {
+            $message[] = 'Teacher could not be added!';
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -420,9 +458,46 @@
                 </form>
             </div>
         </div>
+        <section class="New game">
+            <div class="container">
+                <div class="row text-center py-5">
+                    <div class="col-md-3 col-sm-6 my-3 my-md-0">
+                        <?php
+                        $select_teacher = mysqli_query($conn, "SELECT * FROM teacher") or die('query failed');
+                        if (mysqli_num_rows($select_teacher) > 0) {
+                            while ($fetch_teacher = mysqli_fetch_assoc($select_teacher)) {
+                        ?>
+                                <form action="" method="POST">
+                                    <div class="card shadow">
+                                        <div>
+                                            <img class="img-fluid card-img-top" src="./upload/<?php echo $fetch_teacher['image']; ?>" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="name"><h5 class="card-title"><?php echo $fetch_teacher['name']; ?></h5></div>
+                                            <div class="position"><p class="card-text"><?php echo $fetch_teacher['position']; ?></p></div>
+                                            <div class="email"><h5><?php echo $fetch_teacher['email']; ?></h5></div>
+                                            <div class="phonenumber"><p class="card-text"><?php echo $fetch_teacher['phonenumber']; ?></p></div>
+                                            <div class="description"><p class="card-text"><?php echo $fetch_teacher['description']; ?></p></div>
+                                        </div>
+                                    </div>
+                                </form>
+                        <?php
+                            }
+                        } else {
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
-
+    
+    
+    
+    
+    
+    
 
 
 

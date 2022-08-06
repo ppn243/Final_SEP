@@ -458,7 +458,7 @@ if (isset($_POST['add_teacher'])) {
                 </form>
             </div>
         </div>
-        <section class="New game">
+        <section class="New teacher">
             <div class="container">
                 <div class="row text-center py-5">
                     <div class="col-md-3 col-sm-6 my-3 my-md-0">

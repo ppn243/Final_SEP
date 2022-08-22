@@ -46,12 +46,12 @@ if (isset($_POST['add_teacher'])) {
     <title>Teachers Staff</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="teacher.css">
 </head>
 
 <body>
-
+<?php include 'header.php';?>
     <div class="container">
+        <h1 class="mt-3" style="color:#2A2254">Đội ngũ giảng viên</h1>
         <!-- Element one -->
         <div class="row text-center py-5">
             <div class="col-md-3 col-sm-6 my-3 my-md-0">
@@ -490,9 +490,10 @@ if (isset($_POST['add_teacher'])) {
                 </div>
             </div>
         </section>
+        
     </div>
 
-    
+    <?php include 'footer.php';?>
     
     
     

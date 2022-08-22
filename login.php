@@ -30,13 +30,13 @@ if (isset($_POST['signin'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
+<?php include 'header.php';?>
     <div class="main">
-    
-        <h1 style="text-align: center; font-size:40px; font-weight:bold; padding-top:20px"><span style="color:#8E0D34">VN</span><span style="color:#2A2254">UK</span> LOGIN FORM</h1>
+        <h1 style="text-align: center; font-size:40px; font-weight:bold;"><span style="color:#8E0D34">VN</span><span style="color:#2A2254">UK</span> LOGIN FORM</h1>
         <!-- Sing in  Form -->
         <section class="sign-in">
             <div class="container">
@@ -82,6 +82,7 @@ if (isset($_POST['signin'])) {
     </div>
 
     <!-- JS -->
+    <?php include 'footer.php';?>
 </body>
 
 </html>

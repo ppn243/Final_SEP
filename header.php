@@ -29,12 +29,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav__links">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">Tổng Quan</a>
+              <a class="nav-link active text-white" aria-current="page" href="home.php">Tổng Quan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-white" href="#">Chương Trình Đào Tạo</a>
+              <a class="nav-link active text-white" href="ctdt.php">Chương Trình Đào Tạo</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active text-white" aria-current="page" href="teacher_staff.php">Giảng Viên</a>

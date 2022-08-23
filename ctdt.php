@@ -66,103 +66,186 @@
             </ul>
             <p class="mt-5" style="font-size: 20px;">Chương trình học</p>
             <p>
-                <a style="background-color:#2A2254" class="btn text-white" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Năm 1</a>
-                <button style="background-color:#2A2254" class="btn text-white" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Năm 2</button>
-                <button style="background-color:#2A2254" class="btn text-white" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Năm 3</button>
-                <button style="background-color:#2A2254" class="btn text-white" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Năm 4</button>
-                <button style="background-color:#2A2254" class="btn text-white" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">Học phần tự chọn</button>
+                <a style="background-color:#2A2254" class="btn text-white" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Năm 1
+                </a>
+                <a style="background-color:#2A2254" class="btn text-white" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                    Năm 2
+                </a>
+                <a style="background-color:#2A2254" class="btn text-white" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                    Năm 3
+                </a>
+                <a style="background-color:#2A2254" class="btn text-white" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                    Năm 4
+                </a>
+                <a style="background-color:#2A2254" class="btn text-white" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                    Học phần tự chọn
+                </a>
             </p>
-            <div class="row">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample1">
-                        <div class="card card-body">
-                        <ul>
-                                    <li><p style="font-size:20px">Nhập môn lập trình và máy tính.</p></li>
-                                    <li><p style="font-size:20px">Tiếng Anh học thuật 1, 2, 3.</p></li>
-                                    <li><p style="font-size:20px">Tiếng Anh trong công nghệ thông tin.</p></li>
-                                    <li><p style="font-size:20px">Kỹ năng học thuật.</p></li>
-                                    <li><p style="font-size:20px">Tin học ứng dụng.</p></li>
-                                    <li><p style="font-size:20px">3-4 học phần tự chọn trong khối kiến thức chung.</p></li>
-                                    <li><p style="font-size:20px">3-4 học phần tự chọn trong khối kiến thức cơ sở ngành.</p></li>
-                                </ul>
-                        </div>
-                    </div>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <p style="font-size:20px; color:#2A2254; font-weight:bold">Năm 1:</p>
+                    <ul>
+                        <li>
+                            <p style="font-size:20px">Nhập môn lập trình và máy tính.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Tiếng Anh học thuật 1, 2, 3.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Tiếng Anh trong công nghệ thông tin.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Kỹ năng học thuật.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Tin học ứng dụng.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">3-4 học phần tự chọn trong khối kiến thức chung.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">3-4 học phần tự chọn trong khối kiến thức cơ sở ngành.</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample2">
-                        <div class="card card-body">
-                        <ul>
-                                    <li><p style="font-size:20px">Phân tích hệ thống và thiết kế cơ sở dữ liệu.</p></li>
-                                    <li><p style="font-size:20px">Toán cho khoa học máy tính.</p></li>
-                                    <li><p style="font-size:20px">Lập trình hướng đối tượng.</p></li>
-                                    <li><p style="font-size:20px">Quy trình phát triển ứng dụng 1.</p></li>
-                                    <li><p style="font-size:20px">Thuật toán và cấu trúc dữ liệu.</p></li>
-                                    <li><p style="font-size:20px">Thiết kế và phát triển ứng dụng web.</p></li>
-                                    <li><p style="font-size:20px">Thiết kế và phát triển ứng dụng di động.</p></li>
-                                    <li><p style="font-size:20px">Quy trình phát triển ứng dụng 2.</p></li>
-                                    <li><p style="font-size:20px">Mạng và xử lý song song.</p></li>
-                                    <li><p style="font-size:20px">Triết học Mác Lênin.</p></li>
-                                    <li><p style="font-size:20px">Kinh tế chính trị Mác Lênin.</p></li>
-                                </ul>
-                        </div>
-                    </div>
+            </div>
+            <div class="collapse" id="collapseExample1">
+                <div class="card card-body mt-5">
+                    <p style="font-size:20px; color:#2A2254; font-weight:bold">Năm 2:</p>
+                    <ul>
+                        <li>
+                            <p style="font-size:20px">Phân tích hệ thống và thiết kế cơ sở dữ liệu.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Toán cho khoa học máy tính.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Lập trình hướng đối tượng.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Quy trình phát triển ứng dụng 1.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Thuật toán và cấu trúc dữ liệu.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Thiết kế và phát triển ứng dụng web.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Thiết kế và phát triển ứng dụng di động.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Quy trình phát triển ứng dụng 2.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Mạng và xử lý song song.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Triết học Mác Lênin.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Kinh tế chính trị Mác Lênin.</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample3">
-                        <div class="card card-body">
-                        <ul>
-                                    <li><p style="font-size:20px">4-5 học phần tự chọn trong khối kiến thức chuyên ngành.</p></li>
-                                    <li><p style="font-size:20px">Chủ nghĩa xã hội khoa học.</p></li>
-                                    <li><p style="font-size:20px">Tư tưởng Hồ Chí Minh.</p></li>
-                                    <li><p style="font-size:20px">Lịch sử Đảng Cộng sản Việt Nam.</p></li>
-                                    <li><p style="font-size:20px">Thực tập nghề nghiệp 6 tháng.</p></li>
-                                </ul>
-                        </div>
-                    </div>
+            </div>
+            <div class="collapse" id="collapseExample2">
+                <div class="card card-body mt-5">
+                    <p style="font-size:20px; color:#2A2254; font-weight:bold">Năm 3:</p>
+                    <ul>
+                        <li>
+                            <p style="font-size:20px">4-5 học phần tự chọn trong khối kiến thức chuyên ngành.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Chủ nghĩa xã hội khoa học.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Tư tưởng Hồ Chí Minh.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Lịch sử Đảng Cộng sản Việt Nam.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Thực tập nghề nghiệp 6 tháng.</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample4">
-                        <div class="card card-body">
-                        <ul>
-                                    <li><p style="font-size:20px">Nhập môn trí tuệ nhân tạo.</p></li>
-                                    <li><p style="font-size:20px">4-5 học phần tự chọn trong khối kiến thức chuyên ngành.</p></li>
-                                    <li><p style="font-size:20px">Đồ án tốt nghiệp.</p></li>
-                                </ul>
-                        </div>
-                    </div>
+            </div>
+            <div class="collapse" id="collapseExample3">
+                <div class="card card-body mt-5">
+                    <p style="font-size:20px; color:#2A2254; font-weight:bold">Năm 4:</p>
+                    <ul>
+                        <li>
+                            <p style="font-size:20px">Nhập môn trí tuệ nhân tạo.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">4-5 học phần tự chọn trong khối kiến thức chuyên ngành.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Đồ án tốt nghiệp.</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample5">
-                        <div class="card card-body">
-                        <ul>
-                                    <p style="font-size:20px; color:#2A2254;">Học phần tự chọn kiến thức chung:</p>
-                                    <li><p style="font-size:20px">Viết học thuật.</p></li>
-                                    <li><p style="font-size:20px">Kỹ năng giao tiếp.</p></li>
-                                    <li><p style="font-size:20px">Lập kế hoạch phát triển cá nhân.</p></li>
-                                    <li><p style="font-size:20px">Văn hóa toàn cầu.</p></li>
-                                    <li><p style="font-size:20px">Xác suất thống kê.</p></li>
-                                    <li><p style="font-size:20px">Khởi sự kinh doanh.</p></li>
-                                    <p style="font-size:20px; color:#2A2254;">Học phần tự chọn kiến thức cơ sở ngành:</p>
-                                    <li><p style="font-size:20px">Lập trình Java.</p></li>
-                                    <li><p style="font-size:20px">Giới thiệu Hệ điều hành.</p></li>
-                                    <li><p style="font-size:20px">Tư duy thiết kế.</p></li>
-                                    <li><p style="font-size:20px">Thiết kế với Photoshop và Adobe Illustrator.</p></li>
-                                    <li><p style="font-size:20px">Thách thức dữ liệu 1.</p></li>
-                                    <p style="font-size:20px; color:#2A2254;">Học phần tự chọn kiến thức chuyên ngành:</p>
-                                    <li><p style="font-size:20px">Nhóm học phần phát triển ứng dụng: Lập trình đồ hoạ 3D, Internet kết nối vạn vật, Thiết kế ứng dụng web nâng cao, Lập trình ứng dụng web nâng cao, Giao tiếp người – máy, Công nghệ Blockchain.</p></li>
-                                    <li><p style="font-size:20px">Nhóm học phần nghiên cứu khoa học: Phân tích mã độc, Phân tích dữ liệu lớn, Thách thức dữ liệu 2, Thách thức dữ liệu 3.</p></li>
-                                    <li><p style="font-size:20px">Nhóm học phần phát triển sự nghiệp: Thực tiễn tốt nhất về phát triển phần mềm, Kiểm thử phần mềm, Quản lý dự án phần mềm, Phát triển và vận hành hệ thống phần mềm, Kỹ năng lãnh đạo, Nhập môn Quản trị và Kinh doanh.</p></li>
-                                </ul>
-                        </div>
-                    </div>
+            </div>
+            <div class="collapse" id="collapseExample4">
+                <div class="card card-body mt-5">
+                    <p style="font-size:20px; color:#2A2254; font-weight:bold">Học phần tự chọn:</p>
+                    <ul>
+                        <p style="font-size:20px; color:#2A2254; font-weight:bold">Học phần tự chọn kiến thức chung:</p>
+                        <li>
+                            <p style="font-size:20px">Viết học thuật.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Kỹ năng giao tiếp.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Lập kế hoạch phát triển cá nhân.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Văn hóa toàn cầu.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Xác suất thống kê.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Khởi sự kinh doanh.</p>
+                        </li>
+                        <p style="font-size:20px; color:#2A2254; font-weight:bold">Học phần tự chọn kiến thức cơ sở ngành:</p>
+                        <li>
+                            <p style="font-size:20px">Lập trình Java.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Giới thiệu Hệ điều hành.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Tư duy thiết kế.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Thiết kế với Photoshop và Adobe Illustrator.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Thách thức dữ liệu 1.</p>
+                        </li>
+                        <p style="font-size:20px; color:#2A2254; font-weight:bold">Học phần tự chọn kiến thức chuyên ngành:</p>
+                        <li>
+                            <p style="font-size:20px">Nhóm học phần phát triển ứng dụng: Lập trình đồ hoạ 3D, Internet kết nối vạn vật, Thiết kế ứng dụng web nâng cao, Lập trình ứng dụng web nâng cao, Giao tiếp người – máy, Công nghệ Blockchain.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Nhóm học phần nghiên cứu khoa học: Phân tích mã độc, Phân tích dữ liệu lớn, Thách thức dữ liệu 2, Thách thức dữ liệu 3.</p>
+                        </li>
+                        <li>
+                            <p style="font-size:20px">Nhóm học phần phát triển sự nghiệp: Thực tiễn tốt nhất về phát triển phần mềm, Kiểm thử phần mềm, Quản lý dự án phần mềm, Phát triển và vận hành hệ thống phần mềm, Kỹ năng lãnh đạo, Nhập môn Quản trị và Kinh doanh.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/7a21b9028f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 <?php include 'footer.php'; ?>
 

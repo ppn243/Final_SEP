@@ -42,7 +42,7 @@ if (isset($_POST['signup'])) {
 </head>
 
 <body>
-<?php include 'header.php';?>
+<?php include 'header_admin.php';?>
     <div class="main">
     <h1 style="text-align: center; font-size:40px; font-weight:bold; padding-top:20px"><span style="color:#8E0D34">VN</span><span style="color:#2A2254">UK</span> REGISTER FORM</h1>
         <!-- Sign up form -->

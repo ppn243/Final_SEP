@@ -28,7 +28,8 @@ if(isset($_GET['delete'])){
     <link href="css/admin.css" rel="stylesheet" type="text/css"/>
     <title >Admin Placed Order</title>
 </head>
-<body class="bg-primary-color p-2">
+<?php include 'header_admin.php';?>
+<body class="bg-primary-color">
     <h1 class="mx-auto py-3 text-color" style="width: 500px;text-align: center; padding-bottom: 25px;">Admin Contact Placed</h1>
     <div class="container">
         <?php
@@ -60,8 +61,9 @@ if(isset($_GET['delete'])){
                                 <p>Description : <span><?php echo $fetch_contact['description']; ?></span> </p>               
                         </li>
                     </ul>
+                    <a href="admin_contact.php?delete=<?php echo $fetch_contact['id']; ?>" class="btn btn-danger mt-3" onclick="return confirm('delete?');">Delete</a>    
                     </div>
-                </div>               
+                </div>           
             </div>
             <?php
          }
@@ -71,6 +73,6 @@ if(isset($_GET['delete'])){
         ?>
         </div>
     </div>
-
+    <?php include 'footer.php';?>
 </body>
 </html>

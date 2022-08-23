@@ -31,7 +31,7 @@
 <?php include 'header.php';?>
 <body>
 
-    <div class="container">
+    <div class="container pb-5">
         <div class="row">
             <div class="col-12">
                 <img class="mw-100" src="./imag/trienvongnghenghiep.png" alt="">

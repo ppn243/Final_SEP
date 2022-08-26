@@ -459,14 +459,15 @@ if (isset($_POST['add_teacher'])) {
             </div>
         </div>
         <section class="New teacher">
-            <div class="container">
-                <div class="row text-center py-5">
-                    <div class="col-md-3 col-sm-6 my-3 my-md-0">
-                        <?php
+            <div class="container py-5">
+                <div class="row d-flex flex-wrap text-center ">
+                <?php
                         $select_teacher = mysqli_query($conn, "SELECT * FROM teacher") or die('query failed');
                         if (mysqli_num_rows($select_teacher) > 0) {
                             while ($fetch_teacher = mysqli_fetch_assoc($select_teacher)) {
                         ?>
+                    <div class="col-3">
+                        
                                 <form action="" method="POST">
                                     <div class="card shadow">
                                         <div>
@@ -481,12 +482,13 @@ if (isset($_POST['add_teacher'])) {
                                         </div>
                                     </div>
                                 </form>
+                                </div>
                         <?php
                             }
                         } else {
                         }
                         ?>
-                    </div>
+                    
                 </div>
             </div>
         </section>

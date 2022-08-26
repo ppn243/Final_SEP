@@ -18,14 +18,38 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
   <title>home</title>
 </head>
 
 <body>
-<?php include 'header.php';?>
+  <?php include 'header.php'; ?>
   <div class="container-fuild">
-    <img class="w-100 img-fluid" src="imag/unknown.png" alt="">
-    <span style="background-color: blue;" class="border"></span>
+    <!-- Background image -->
+    <div class="p-5 text-center bg-image" style="background-image: url('imag/du-hoc-anh-quoc-truong-tuyen-sinh-kho-nhat-2.png'); height: 500px;">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 style="font-weight: bold;" class="mb-5"><span style="color:#DC143C;">VN</span><span style="color: 	#0000CD;">UK</span></h1>
+            <h4 style="color: #FFFFE0;" class="mb-3">Viện Nghiên cứu và Đào tạo Việt - Anh, tiền thân trường Đại học quốc tế, Đại học Đà Nẵng</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="container">
+            <p style="color: 	#FAEBD7;" class="mb-3 mt-3">Đại học Đà Nẵng vinh dự được hai chính phủ Việt Nam và Vương quốc Anh chọn và giao nhiệm vụ hợp tác với các trường đại học Vương quốc Anh triển khai dự án thành lập trường Đại học Việt – Anh, một trường đại học công lập đẳng cấp quốc tế tại Đà Nẵng. Theo Quyết định số 5555/QĐ-BGDĐT ngày 22 tháng 11 năm 2013 của Bộ Giáo dục và Đào tạo, trường Đại học Công lập Quốc tế Việt – Anh được phát triển qua hai giai đoạn: (i) thành lập Viện Nghiên cứu và Đào tạo Việt – Anh (gọi tắt là VNUK) thuộc Đại học Đà Nẵng, (ii) phát triển Viện thành trường Đại học Quốc tế Việt – Anh. Theo quyết định này, VNUK được tổ chức đào tạo các chương trình bậc đại học, thạc sĩ, và tiến sĩ cũng như các khóa đào tạo bồi dưỡng ngắn hạn.
+
+Trong giai đoạn 1 vừa qua, VNUK đã và đang hợp tác với rất nhiều đối tác quốc tế, đặc biệt là đối tác đại học tại Vương quốc Anh để triển khai các hoạt động nghiên cứu và đào tạo theo hướng tiếp cận với trình độ giáo dục tiên tiến, hiện đại trên thế giới. VNUK được xem là một trường đại học quốc tế công lập đầu tiên tại miền Trung Việt Nam. Hiện nay, được sự đồng ý của Hội đồng Đại học Đà Nẵng vào tháng 3/2021, VNUK đang trình Bộ Giáo dục và Đào tạo đề án thành lập trường Đại học quốc tế. Tháng 3/2022, trong chuyến thăm Đại học Đà Nẵng, Bộ trưởng Bộ Giáo dục và Đào tạo đã khẳng định sự ủng hộ chủ trương thành lập trường Đại học quốc tế Việt Anh. </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img class="w-100 img-fluid" src="imag/unknown.png" alt="">
+    <span style="background-color: blue;" class="border"></span> -->
 
   </div>
   <div class="container">
@@ -95,15 +119,19 @@
             <h3>Mục tiêu của chương trình</h3>
           </div>
 
-          <div class="card card-body text-white mt-5" style="background-color:#5D1919; border-radius:20px">
-            Sinh viên Khoa học và Kỹ thuật máy tính sau đào tạo có đủ kiến thức chuyên ngành Khoa học và Kỹ thuật máy tính đáp ứng nhu cầu lao động chất lượng cao cho thị trường lao động trong và ngoài nước cũng như tiếp tục việc học các bậc học cao hơn.
+          <div class="card mt-5">
+            <img src="imag/544A5545-scaled.png" class="card-img-top" alt="Sunset Over the Sea" />
+            <div class="card card-body text-white mt-2" style="background-color:#5D1919; border-radius:20px">
+              <p class="card-text">Sinh viên Khoa học và Kỹ thuật máy tính sau đào tạo có đủ kiến thức chuyên ngành Khoa học và Kỹ thuật máy tính đáp ứng nhu cầu lao động chất lượng cao cho thị trường lao động trong và ngoài nước cũng như tiếp tục việc học các bậc học cao hơn.
+</p>
+            </div>
           </div>
           <div class="card card-body text-white mt-3" style="background-color:#5D1919; border-radius:20px">
-            Sinh viên Khoa học và Kỹ thuật máy tính sau đào tạo có đủ kiến thức chuyên ngành Khoa học và Kỹ thuật máy tính đáp ứng nhu cầu lao động chất lượng cao cho thị trường lao động trong và ngoài nước cũng như tiếp tục việc học các bậc học cao hơn.
-          </div>
+          Sinh viên Khoa học và Kỹ thuật máy tính sau đào tạo có đủ kỹ năng về kỹ thuật và kỹ năng mềm để tham gia thực hiện các dự án hệ thống thông tin, hệ thống tri thức, và hệ thống phần mềm đám ứng nhu cầu kinh tế xã hội.
+          </div> 
           <div class="card card-body text-white mt-3" style="background-color:#5D1919; border-radius:20px">
-            Sinh viên Khoa học và Kỹ thuật máy tính sau đào tạo có đủ kiến thức chuyên ngành Khoa học và Kỹ thuật máy tính đáp ứng nhu cầu lao động chất lượng cao cho thị trường lao động trong và ngoài nước cũng như tiếp tục việc học các bậc học cao hơn.
-          </div>
+          Sinh viên Khoa học và Kỹ thuật máy tính sau đào tạo có tinh thần trách nhiệm trong công việc, chủ động trong giao tiếp và tích cực trong việc học hỏi trong lĩnh vực khoa học và kỹ thuật máy tính.
+          </div> 
         </div>
       </div>
       <div class="card card-body text-white my-5" style="background-color:#D9D9D9; border-radius:30px">
@@ -117,13 +145,13 @@
               </div>
             </div>
             <div class="col-4">
-            <div class="card card-body text-white mt-3" style="background-color:#2A2254; border-radius:35px">
+              <div class="card card-body text-white mt-3" style="background-color:#2A2254; border-radius:35px">
                 <img class="img-fluid" src="imag/3nguoi.png" alt="" style="border-radius:30px">
                 <h4 class="mt-2" style="text-align: center">Học phí</h4>
               </div>
             </div>
             <div class="col-4">
-            <div class="card card-body text-white mt-3" style="background-color:#2A2254; border-radius:35px">
+              <div class="card card-body text-white mt-3" style="background-color:#2A2254; border-radius:35px">
                 <img class="img-fluid" src="imag/nhieunguoi.png" alt="" style="border-radius:30px">
                 <h4 class="mt-2" style="text-align: center">Chương trình chuyển tiếp</h4>
               </div>
@@ -139,7 +167,9 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
-<?php include 'footer.php';?>
+<?php include 'footer.php'; ?>
 
 </html>

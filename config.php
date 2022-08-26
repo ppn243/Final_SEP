@@ -1,5 +1,5 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'root', '', 'nguyenphan') or die('connection failed')
+$conn = mysqli_connect('localhost', 'root', '', 'triphan') or die('connection failed') //sua ten
 
 ?>

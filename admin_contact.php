@@ -57,7 +57,7 @@ if (isset($_GET['delete'])) {
                             <h6 class="text-center">Description : <span><?php echo $fetch_contact['description']; ?></span> </h6>
                         </div>
                         <div class="d-flex justify-content-center py-4">
-                            <a style="background-color:#8E0D34;" href="test.php?delete=<?php echo $fetch_contact['id']; ?>" class="btn text-white" onclick="return confirm('delete?');">Delete</a>
+                            <a style="background-color:#8E0D34;" href="admin_contact.php?delete=<?php echo $fetch_contact['id']; ?>" class="btn text-white" onclick="return confirm('delete?');">Delete</a>
                         </div>
                     </div>
             <?php
